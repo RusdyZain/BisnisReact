@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sosmed() {
   return (
-    <div className="bg-white">
+    <div className="bg-[#f5f6f6]">
       <div className="py-5 max-w-7xl px-4 pb-10 sm:px-6 lg:px-2 lg :pb-14 mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
           <div>

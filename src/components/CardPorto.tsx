@@ -27,14 +27,15 @@ export default function CardPorto(props: Props) {
       <div className="mt-auto flex items-center gap-x-3">
         <div className="relative w-8 h-8">
           <Image
-            className=" rounded-full"
-            src="/FramePP.jpg"
+            className="rounded-md"
+            width={32} 
+            height={32}
+            src="/logo.png"
             alt="Image Description"
-            fill
           />
         </div>
         <div>
-          <h5 className="text-sm text-gray-800 ">Oleh Severus Snape</h5>
+          <h5 className="text-sm text-gray-800 ">Oleh Rafflesia Team</h5>
         </div>
       </div>
     </Link>

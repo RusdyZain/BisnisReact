@@ -8,6 +8,12 @@ const nextConfig = {
         hostname: "img.freepik.com",
       },
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
   },
 };
 

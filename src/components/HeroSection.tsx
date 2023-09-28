@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Sosmed() {
+export default function HeroSection() {
   return (
-    <section className="bg-white">
+    <section className="bg-[#f5f6f6]">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-[#33363A]">
@@ -13,7 +13,7 @@ export default function Sosmed() {
                 We&apos;re an innovation agency dedicated to transforming your business through technology and creativity. Join us on this journey to success.</p>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white hover:text-white rounded-lg bg-green-600 hover:bg-[#33363A] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white hover:text-[#33363A] rounded-lg bg-[#33363A] hover:bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 "
             >
               Get started
               <svg
@@ -32,7 +32,7 @@ export default function Sosmed() {
 
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border hover:text-[#33363A] border-green-600 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-[#33363A] dark:focus:ring-gray-800"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border hover:text-[#33363A] border-[#33363A] rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-[#33363A] dark:focus:ring-gray-800"
             >
               Contact Us
             </a>
@@ -41,8 +41,8 @@ export default function Sosmed() {
             <Image
               src="/iconDepan.png"
               alt="mockup"
-              width={500}
-              height={100}
+              width={1000}
+              height={500}
             />
           </div>
         </div>
