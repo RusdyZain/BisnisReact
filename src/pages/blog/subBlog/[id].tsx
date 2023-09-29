@@ -101,7 +101,7 @@ export default function Project() {
             <p className="text-justify text-lg text-white">{data?.pgAfter}</p>
           </div>
         </div>
-        <div />
+        <div className="border-b" />
       </div>
       <Footer />
     </div>
