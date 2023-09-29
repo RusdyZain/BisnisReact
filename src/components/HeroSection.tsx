@@ -3,17 +3,17 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#f5f6f6]">
+    <section className="bg-[#252534]">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-[#33363A]">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
                 Limitless Innovation: Our Solution for You
             </h1>
-            <p className="max-w-2xl mb-6 font-light text-[#33363A] lg:mb-8 md:text-lg lg:text-xl dark:text-gray-900">
+            <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl dark:text-white">
                 We&apos;re an innovation agency dedicated to transforming your business through technology and creativity. Join us on this journey to success.</p>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white hover:text-[#33363A] rounded-lg bg-[#33363A] hover:bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 "
+              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white hover:text-[#252534] rounded-lg bg-[#3282CD] hover:bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 "
             >
               Get started
               <svg
@@ -32,7 +32,7 @@ export default function HeroSection() {
 
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border hover:text-[#33363A] border-[#33363A] rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-[#33363A] dark:focus:ring-gray-800"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border hover:text-[#252534] border-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:focus:ring-gray-800"
             >
               Contact Us
             </a>

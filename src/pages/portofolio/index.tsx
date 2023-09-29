@@ -46,7 +46,7 @@ export default function Portofolio() {
   return (
     <>
       <Header />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-9 p-14 bg-white">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-9 p-14 bg-[#252534]">
         {portoData.map((value) => (
           <CardPorto
             projectName={value.projectName}

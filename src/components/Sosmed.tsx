@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Sosmed() {
   return (
-    <div className="bg-[#f5f6f6]">
+    <div className="bg-[#252534]">
       <div className="py-5 max-w-7xl px-4 pb-10 sm:px-6 lg:px-2 lg :pb-14 mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
           <div>
             <div>
               <svg
-                className="h-16 w-16 text-[#33363A]"
+                className="h-16 w-16 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -22,8 +22,8 @@ export default function Sosmed() {
               </svg>
             </div>
             <div className="mt-5">
-              <h3 className="text-2xl font-semibold text-[#33363A]">Instagram</h3>
-              <p className="mt-1 text-[#33363A] text-1xl">
+              <h3 className="text-2xl font-semibold text-white">Instagram</h3>
+              <p className="mt-1 text-white text-1xl">
                 Instagram, as the main business promotion medium for your
                 platform
               </p>
@@ -32,7 +32,7 @@ export default function Sosmed() {
           <div>
             <div>
               <svg
-                className="h-16 w-16 text-[#33363A]"
+                className="h-16 w-16 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -46,8 +46,8 @@ export default function Sosmed() {
               </svg>
             </div>
             <div className="mt-5">
-              <h3 className="text-2xl font-semibold text-[#33363A]">YouTube</h3>
-              <p className="mt-1 text-[#33363A] text-1xl">
+              <h3 className="text-2xl font-semibold text-white">YouTube</h3>
+              <p className="mt-1 text-white text-1xl">
                 YouTube, as the main business promotion medium for your platform
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function Sosmed() {
           <div>
             <div>
               <svg
-                className="h-16 w-16 text-[#33363A]"
+                className="h-16 w-16 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -68,8 +68,8 @@ export default function Sosmed() {
               </svg>
             </div>
             <div className="mt-5">
-              <h3 className="text-2xl font-semibold text-[#33363A]">Facebook</h3>
-              <p className="mt-1 text-[#33363A] text-1xl">
+              <h3 className="text-2xl font-semibold text-white">Facebook</h3>
+              <p className="mt-1 text-white text-1xl">
                 Facebook, as the main business promotion medium for your
                 platform
               </p>
@@ -78,7 +78,7 @@ export default function Sosmed() {
           <div>
             <div>
               <svg
-                className="h-16 w-16 text-[#33363A]"
+                className="h-16 w-16 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -91,8 +91,8 @@ export default function Sosmed() {
               </svg>
             </div>
             <div className="mt-5">
-              <h3 className="text-2xl font-semibold text-[#33363A]">Twitter</h3>
-              <p className="mt-1 text-[#33363A] text-1xl">
+              <h3 className="text-2xl font-semibold text-white">Twitter</h3>
+              <p className="mt-1 text-white text-1xl">
                 Twitter, as the main business promotion medium for your
                 platform
               </p>
