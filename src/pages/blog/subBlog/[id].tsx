@@ -28,7 +28,7 @@ export default function Project() {
   }, [router.isReady, router.query.id]);
 
   return (
-    <>
+    <div className="bg-[#252534]">
       <Header />
       <div className="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
         <div className="max-w-2xl">
@@ -48,7 +48,7 @@ export default function Project() {
                   <div>
                     <div>
                       <div className="sm:mb-1 block text-left cursor-pointer">
-                        <span className="font-semibold text-gray-800 ">
+                        <span className="font-semibold text-white">
                           Rafflesia Team
                         </span>
                       </div>
@@ -81,8 +81,8 @@ export default function Project() {
           </div>
           <div className="space-y-5 md:space-y-8">
             <div className="space-y-3">
-              <h2 className="text-2xl font-bold md:text-3xl ">{data?.title}</h2>
-              <p className="text-justify text-lg text-gray-800 ">{data?.pgBefore}</p>
+              <h2 className="text-2xl font-bold md:text-3xl text-white ">{data?.title}</h2>
+              <p className="text-justify text-lg text-white">{data?.pgBefore}</p>
             </div>
             <figure>
               <div className="w-full h-[410px] object-cover rounded-xl relative">
@@ -94,16 +94,16 @@ export default function Project() {
                 />
               </div>
 
-              <figcaption className="mt-3 text-sm text-center text-gray-500">
-              Woman Identifying Brand name
+              <figcaption className="mt-3 text-sm text-center text-white">
+                Woman Identifying Brand name
               </figcaption>
             </figure>
-            <p className="text-justify text-lg text-gray-800 ">{data?.pgAfter}</p>
+            <p className="text-justify text-lg text-white">{data?.pgAfter}</p>
           </div>
         </div>
         <div className="border-b" />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

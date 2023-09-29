@@ -21,8 +21,8 @@ export default function CardPorto(props: Props) {
         />
       </div>
       <div className="my-6">
-        <h3 className="text-xl font-semibold text-gray-800  ">{props.title}</h3>
-        <p className="mt-5 text-gray-600 ">{props.desc}</p>
+        <h3 className="text-xl font-semibold text-white  ">{props.title}</h3>
+        <p className="mt-5 text-white ">{props.desc}</p>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
         <div className="relative w-8 h-8">
@@ -35,7 +35,7 @@ export default function CardPorto(props: Props) {
           />
         </div>
         <div>
-          <h5 className="text-sm text-gray-800 ">Oleh Rafflesia Team</h5>
+          <h5 className="text-sm text-white ">Oleh Rafflesia Team</h5>
         </div>
       </div>
     </Link>
