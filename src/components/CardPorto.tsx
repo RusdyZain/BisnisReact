@@ -1,43 +1,34 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import blogData from "@/dataJson/projectData.json"
 
-type Props = {
-  title: string;
-  imgUrl: string;
-  desc: string;
-  link: string;
-};
-
-export default function CardPorto(props: Props) {
+export default function ProjectItem() {
   return (
-    <Link className="flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5" href={props.link}>
-      <div className="w-full h-52 overflow-hidden rounded-xl bg-red-400 relative">
-        <Image
-          className="w-full object-cover rounded-xl"
-          src={props.imgUrl}
-          alt="Image Description"
-          fill
-        />
-      </div>
-      <div className="my-6">
-        <h3 className="text-xl font-semibold text-white  ">{props.title}</h3>
-        <p className="mt-5 text-white ">{props.desc}</p>
-      </div>
-      <div className="mt-auto flex items-center gap-x-3">
-        <div className="relative w-8 h-8">
+    <>
+      {blogData.map((item, index) => (
+        <div key={item.projectId} className="relative flex items-center justify-center h-auto w-full shadow-md shadow-[#3282CD] rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#3282CD]">
           <Image
-            className="rounded-md"
-            width={32} 
-            height={32}
-            src="/logo.png"
-            alt="Image Description"
+            className="rounded-xl group-hover:opacity-10"
+            src={item.bgUrl}
+            alt="Background"
+            width={1000}
+            height={1000}
           />
-        </div>
-        <div>
-          <h5 className="text-sm text-white ">Oleh Rafflesia Team</h5>
-        </div>
-      </div>
-    </Link>
+          <div className="hidden group-hover:block absolute top-[50%] left-[30%] translate-x-[-20%] translate-y-[-50%]">
+            <h3 className="text-xl font-bold text-white tracking-wider text-center">
+              {item.project_name}
+            </h3>
+            <Link href={"/portofolio/subPorto/" + item.projectId}>
+              <p className="text-sm pb-4 pt-2 text-white text-center">{item.description}</p>
+              <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                More Info
+              </p>
+            </Link>
+          </div>
+        </div >
+      ))
+      }
+    </>
   );
-}
+};
