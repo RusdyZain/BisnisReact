@@ -1,21 +1,24 @@
+import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { blogData } from "../index";
-import { useRouter } from "next/router.js";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import blogData from "@/dataJson/blogData.json"
 
 type blogDataType = {
   id: number;
   title: string;
-  desc: string;
-  imgUrl: string;
-  link: string;
+  author: string;
+  date: string;
+  category: string;
+  content: string;
   pgBefore: string;
   pgAfter: string;
+  imgUrl: string;
 };
 
-export default function Project() {
+export default function SubBlog() {
   const [data, setData] = useState<blogDataType | undefined>();
   const router = useRouter();
 
@@ -25,7 +28,7 @@ export default function Project() {
       const result = blogData.find((value) => value.id === parseInt(id));
       setData(result);
     }
-  }, [router.isReady, router.query.id]);
+  }, [router]);
 
   return (
     <div className="bg-[#252534]">
@@ -101,7 +104,7 @@ export default function Project() {
             <p className="text-justify text-lg text-white">{data?.pgAfter}</p>
           </div>
         </div>
-        <div className="border-b" />
+        <div />
       </div>
       <Footer />
     </div>

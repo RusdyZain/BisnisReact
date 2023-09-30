@@ -1,63 +1,24 @@
+import React from 'react';
+import ProjectItem from '@/components/CardPorto';
 import Header from "@/components/Header";
-import CardPorto from "@/components/CardPorto";
 import Footer from "@/components/Footer";
-export const portoData = [
-  {
-    projectId: 1,
-    link: "/portofolio/1",
-    projectName: "Company Website Redesign",
-    description:
-      "We revamped the client's outdated website, giving it a modern look and improving user experience. The project included responsive design, content migration, and SEO optimization.",
-    client: "ABC Corporation",
-    completed_date: "2023-02-15",
-    services_provided: ["Web Design", "Web Development", "SEO Optimization"],
-  },
-  {
-    projectId: 2,
-    link: "/portofolio/2",
-    projectName: "E-commerce Store Development",
-    description:
-      "We built a feature-rich online store from scratch, including product catalog setup, payment gateways, and inventory management. The client's online sales have since skyrocketed.",
-    client: "XYZ Retailers",
-    completed_date: "2023-04-30",
-    services_provided: [
-      "E-commerce Development",
-      "Payment Integration",
-      "Inventory Management",
-    ],
-  },
-  {
-    projectId: 3,
-    link: "/portofolio/3",
-    projectName: "Social Media Marketing Campaign",
-    description:
-      "We devised and executed a targeted social media marketing strategy, resulting in increased brand visibility and engagement. The campaign included content creation and PPC advertising.",
-    client: "LMN Services",
-    completed_date: "2023-06-20",
-    services_provided: [
-      "Social Media Marketing",
-      "Content Creation",
-      "PPC Advertising",
-    ],
-  },
-];
 
-export default function Portofolio() {
+export default function Projects() {
   return (
-    <>
+    <div className='bg-[#252534]'>
       <Header />
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-9 p-14 bg-[#252534]">
-        {portoData.map((value) => (
-          <CardPorto
-            projectName={value.projectName}
-            description={value.description}
-            key={value.projectId}
-            link={value.link}
-            completed_date={value.completed_date}
-          />
-        ))}
+      <div id='projects' className='w-full'>
+        <div className='max-w-[1240px] mx-auto px-2 py-16 text-center'>
+          <p className='text-white text-2xl font-bold md:text-6xl md:leading-tight'>
+            Projects
+          </p>
+          <h2 className='text-white pb-10 pt-3 justify-center'>Dalam dunia bisnis yang kompetitif, inovasi dan strategi yang tepat dapat membuat perbedaan besar. Saya bangga mempresentasikan portofolio bisnis saya yang mencerminkan keahlian dan dedikasi saya dalam mencapai kesuksesan. Portofolio ini mencakup berbagai proyek bisnis yang telah saya jalani, menampilkan pengalaman dan hasil kerja keras saya. Selamat menikmati penjelajahan melalui berbagai proyek yang telah saya rancang, kembangkan, dan implementasikan dalam perjalanan bisnis saya.</h2>
+          <div className='grid md:grid-cols-3 gap-5'>
+            <ProjectItem />
+          </div>
+        </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
-}
+};
