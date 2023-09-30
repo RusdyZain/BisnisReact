@@ -7,7 +7,7 @@ const Service = () => {
       <Header />
       <div className="text-center mt-12">
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          Kami memiliki Layanan Service Untuk Kebutuhan Perusahaan anda
+          Kami memiliki Layanan Service Untuk Kebutuhan Perusahaan anda.
         </h1>
         <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           Here at Flowbite we focus on markets where technology, innovation, and
